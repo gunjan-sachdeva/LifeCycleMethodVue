@@ -1,15 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <HomeComp />
+ <MountComp />
+ <UpdateComp />
+ <UnmountComp />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeComp from './components/HomeComp.vue'
+import MountComp from './components/MountComp.vue'
+import UnmountComp from './components/UnmountComp.vue'
+import UpdateComp from './components/UpdateComp.vue'
+
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeComp,
+    MountComp,
+    UpdateComp,
+    UnmountComp
   }
 }
 </script>
